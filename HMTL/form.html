@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="box child"></div>
+    <div class="box child"></div>
+    <div class="box child"></div>
+    <div class="box child"></div>
+    <div class="box child"></div>
+
+    <h1>html entities &lt; span&gt; ; "" </h1>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28258.910346220626!2d85.29729902744296!3d27.70605186400589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19006da38c97%3A0xeb1680160e08401c!2sSankhadhar%20Park!5e0!3m2!1sen!2snp!4v1676200529695!5m2!1sen!2snp"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <!-- <form action="index.php" method="POST"> -->
+    <form onsubmit="alert('submiteed')">
+        <!-- block level element vs inline elments -->
+        <div>
+            <label for="full_name">full Name * </label>
+            <input name="full_name" value="Doe Doe" type="text" id="full_name" placeholder="Full Name" required />
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" placeholder="Email" />
+        </div>
+        <div>
+            <label for="password">password</label>
+
+            <input type="password" placeholder="Password" />
+        </div>
+        <div>
+            <input type="checkbox" id="terms" checked />
+            <label for="terms">Aggree terms an condiction</label>
+        </div>
+        <div>
+            <input type="file" multiple accept="image/*" />
+        </div>
+        <div>
+            <input type="date" />
+        </div>
+        <div>
+            <textarea name="" id="" rows="5"></textarea>
+        </div>
+        <button type="button"> create new field</button>
+        <div>
+            <select name="" id="vehicle" placeholder="Vehicles">
+                <option value="">Select</option>
+                <option value="car">car</option>
+                <option value="bike">bike</option>
+                <option value="scooter">scooter</option>
+            </select>
+        </div>
+        <input type="number" min="0" max="10">
+        <!-- <input type="image"> -->
+        <input type="reset">
+
+        <button>Signup</button>
+    </form>
+
+
+
+</body>
+<script>
+    function signup(e) {
+        // api call 
+
+    }
+</script>
+
+</html>

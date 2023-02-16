@@ -1,0 +1,19 @@
+/* 
+    css syntax
+        selector{
+            protpery/key: value;
+        }
+
+        selector
+            - tag / element selectr
+
+
+
+    html syntax
+        <tag></tag>
+
+*/
+
+body{
+    /* background-color: teal; */
+}

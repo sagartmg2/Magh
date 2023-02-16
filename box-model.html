@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <style>
+        /* reset css */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        /* end-reset */
+
+
+        .box {
+            border: 10px solid black;
+            height: 200px;
+            width: 375px;
+            padding: 40px;
+            background-color: teal;
+            color: white;
+            /* margin: 40px; */
+        }
+
+        .parent {
+            height: 400px;
+            width: 400px;
+            /* background-color: teal; */
+            border: 1px solid red;
+        }
+
+        .child {
+            border: 5px solid black;
+            width: 200px;
+            height: 150px;
+            display: inline-block;
+        }
+
+        main {
+            margin-top: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul type="square">
+                <li> <a href="./index.html"> Home </a></li>
+                <li> <a href="./contact.html"> contact us </a></li>
+                <li><a href="./contact.html"> About us </a></li>
+                <li><a href="./contact.html"> FAQ </a></li>
+                <li><a href="./contact.html"> Blogs </a></li>
+                <li><a href="./box-model.html" class="active"> Box model </a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <h1>box model</h1>
+    </main>
+
+    <!-- <div class="box">
+        lorem ipsum
+    </div> -->
+
+    <div class="parent">
+        <div class="child">child one</div>
+        <div class="child"> child two</div>
+    </div>
+
+
+</body>
+
+</html>

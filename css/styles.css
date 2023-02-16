@@ -1,0 +1,108 @@
+/* html synatx */
+/* 
+    <tag> <content> </tag>
+
+*/
+
+
+/* 
+    css stynax
+
+    selector {
+        property : value;
+    }
+    
+    type of selector
+        - element / tag seelcotr
+
+*/
+
+body {
+    background-color: initial;
+}
+
+/* 
+    0 - 255 
+    rgb (255,255,0)
+*/
+h1 {
+    /* color: white; */
+    /* color: #FFFFFF; */
+    /* color: rgb(255, 255, 0); */
+    /* color: rgba(255, 255, 0, 1)/; */
+    /* color: white; */
+    /* font-size: 50px; */
+}
+
+
+/* reset css */
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+
+#home {
+    font-weight: bold;
+}
+
+/* #google{
+    text-decoration: underline;
+}
+
+#youtube{
+    text-decoration: underline;
+} */
+
+#home {
+    margin-left: 0;
+}
+
+.active {
+    font-weight: bold;
+    color: red;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.disabled {
+    color: grey;
+    cursor: no-drop;
+    pointer-events: none;
+}
+
+
+
+/* 
+    selector {
+        property : value
+    }
+     - id
+     - class
+     - tag / elment  / type
+
+     
+     combination of selectors 
+         - descendent selector  // <selctor-1><space><seldctor-2>
+         - direct child selector  // <selctor-1><space><seldctor-2>
+ 
+*/
+
+header li {
+    display: inline;
+    margin: 10px;
+}
+
+footer div{
+    display: inline-block;
+}
+footer nav{
+    display: inline-block;
+}
