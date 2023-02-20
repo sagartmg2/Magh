@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* direct child  selecotr */
+        .big-box>.child {
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+        }
+
+        /* descendent selecotr */
+        /* .big-box .child {
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+        } */
+
+        /* descendent selecotr */
+        .small-box .child {
+            height: 50px;
+            width: 50px;
+            border: 1px solid;
+        }
+
+        .mb-10 {
+            margin-bottom: 10px;
+        }
+
+        .small-box .first {
+            padding: 10px;
+            background-color: red;
+        }
+
+        .inline {
+            display: inline;
+        }
+
+        /* and selector */
+        .inline.first {
+            color: red;
+        }
+
+        .child.first,
+        .second.child {
+            background-color: aqua;
+        }
+
+        /* h1{
+            margin:10px
+        }
+        h2{
+            margin:10px
+        }
+        h3{
+            margin:10px
+        }
+        p{
+            margin:10px
+        } */
+
+
+        /* Or selector */
+        h1,
+        h2,
+        h3,
+        p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .underline.box-title {
+            text-decoration: underline;
+        }
+
+        [type="password"]{
+                border: 2px solid red;
+        }
+    
+    </style>
+</head>
+
+<body>
+
+    <h1>Heading1</h1>
+    <h2 class="underline">Heading2</h2>
+    <h3>Heading2</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione accusantium neque ullam ab aliquid minus
+        dignissimos accusamus illum tempora molestias, cum reiciendis rerum. Culpa est earum mollitia doloribus
+        voluptatibus eos.</p>
+
+    <hr>
+
+    <h1 class="mb-10">selector</h1>
+    <h2 class="mb-10 underline box-title">Big</h2>
+
+    <div class="big-box first-lev">
+        <div class="second-level">
+            <div class="child"> child third-levl</div>
+        </div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+
+    <h2 class="mb-10 underline box-title">Small</h2>
+    <div class="small-box">
+        <div class="child first mb-10"></div>
+        <div class="child second"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+
+    <ul>
+        <li class="inline first">index</li>
+        <li class="second inline">contact</li>
+    </ul>
+    <hr>
+    <ul>
+        <li class="first">one</li>
+        <li class="second">two </li>
+    </ul>
+    <ul>
+        <li class="inline">one</li>
+        <li class="inline">two </li>
+    </ul>
+
+    <hr>
+    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUrMwT6NaLAt9FlwMNPD6nfgj5NqsNXXV_ycI63OIf_g&s">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUrMwT6NaLAt9FlwMNPD6nfgj5NqsNXXV_ycI63OIf_g&s">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUrMwT6NaLAt9FlwMNPD6nfgj5NqsNXXV_ycI63OIf_g&s"
+        alt="">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUrMwT6NaLAt9FlwMNPD6nfgj5NqsNXXV_ycI63OIf_g&s"
+        alt=""> -->
+
+
+    <form>
+        <input type="text" />
+        <input type="password" name="password" />
+        <input type="submit" />
+    </form>
+
+
+</body>
+
+</html>
