@@ -54,6 +54,30 @@
         .absoulte:nth-child(3) {
             background-color: blue;
         }
+
+        .modal {
+            width: 400px;
+            margin-right: auto;
+            margin-left: auto;
+            background-color: white;
+            margin-top: 200px;
+            padding: 20px;
+        }
+
+        .modal-wrapper {
+            display: none;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+        }
+
+        .modal-wrapper.active {
+            display: block;
+        }
     </style>
 </head>
 
@@ -267,6 +291,13 @@
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero nihil, vitae sed voluptatem sapiente animi
         corporis eaque perferendis, obcaecati doloribus accusantium eveniet totam fugiat magnam odio quos quisquam
         aperiam velit!</p>
+
+    <div class="modal-wrapper">
+        <div class="modal">
+            <h1>modal</h1>
+            <button>save changes...</button>
+        </div>
+    </div>
 
 </body>
 
