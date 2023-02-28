@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .projects img {
+            height: 150px;
+        }
+
+        .project {
+            border: 1px solid;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .project p {
+            text-align: justify;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            /* gap: 10px; */
+        }
+
+        .project {
+            width: 33.33%
+        }
+
+        @media (max-width:768px) {
+            .project {
+                width: 50%;
+            }
+        }
+
+        @media (max-width:576px) {
+
+            /* .projects {
+                flex-direction: column;
+            } */
+            .project {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Projects</h1>
+
+    <div class="projects">
+        <div class="project">
+            <img src="./git.png" />
+            <h2>Git</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate odio quos laboriosam aliquid a,
+                perspiciatis sed repellat adipisci necessitatibus sint cumque natus ut quo aspernatur fugiat illo
+                tenetur quasi facere!</p>
+        </div>
+        <div class="project">
+            <img src="./node.png" />
+            <h2>Node</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate odio quos laboriosam aliquid a,
+                perspiciatis sed repellat adipisci necessitatibus sint cumque natus ut quo aspernatur fugiat illo
+                tenetur quasi facere!</p>
+        </div>
+        <div class="project">
+            <img src="./react.png" />
+            <h2>React</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate odio quos laboriosam aliquid a,
+                perspiciatis sed repellat adipisci necessitatibus sint cumque natus ut quo aspernatur fugiat illo
+                tenetur quasi facere!</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
