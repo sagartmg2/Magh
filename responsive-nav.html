@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            gap: 10px;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header p {
+            display: inline-block;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        header nav {
+            transform: translateX(100%);
+            /* display: none; */
+            position: fixed;
+            background-color: blanchedalmond;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 40vw;
+            transition: all .5s;
+        }
+
+        header nav.active {
+            transform: translateX(0%);
+        }
+
+        header nav ul {
+            display: flex;
+            display: flex;
+            flex-direction: column;
+            padding: 25px;
+
+        }
+
+        @media (min-width:576px) {
+            header div.menu {
+                display: none;
+            }
+
+            header nav {
+                position: relative;
+                display: flex;
+                transform: translateX(0);
+            }
+
+            header nav ul {
+                display: flex;
+                flex-direction: row;
+
+            }
+
+            header nav p {
+                display: none;
+            }
+
+        }
+
+        .navbar__overlay {
+            display: hidden;
+
+        }
+
+        .box {}
+
+        .child {
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+        }
+
+        .child:hover {
+            background-color: red;
+            transform: translate(2px, -2px);
+            /* transition-property: transform, background-color;
+            transition-duration: 1s;
+            transition-delay: 0s; */
+            transition: all .5s;
+        }
+
+        @keyframes glow {
+            0% {}
+
+            50% {
+                color: red;
+                transform: translateY(-10%);
+                /* transform: translateX(100%); */
+            }
+
+            100% {
+                /* transform: translateX(200%); */
+
+            }
+        }
+
+        #logo {
+            animation-name: glow;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            /* animation-fill-mode: forwards; */
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <header>
+        <p id="logo">lOGO </p>
+        <nav id="navbar">
+            <p id="cross">X</p>
+            <ul>
+                <li><a>Home</a></li>
+                <li><a>Home</a></li>
+                <li><a>Home</a></li>
+                <li><a>Home</a></li>
+            </ul>
+            <div class="navbar__overlay ">
+
+            </div>
+        </nav>
+        <div class="menu" id="menu">
+            <img src="iconmonstr-filter-down-lined-48.png" />
+        </div>
+    </header>
+
+    <main>
+        <div class="parent">
+
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+
+        </div>
+    </main>
+
+    <div class="box"></div>
+
+    <script>
+
+        document.getElementById("menu").addEventListener("click", () => {
+            document.getElementById("navbar").classList.add("active")
+        })
+        document.getElementById("cross").addEventListener("click", () => {
+            document.getElementById("navbar").classList.remove("active")
+        })
+
+    </script>
+
+
+</body>
+
+</html>
