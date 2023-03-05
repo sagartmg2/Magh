@@ -90,4 +90,9 @@ console.log("activeStatus", activeStatus);
 
 console.log(12 * 10);
 
-// console.log("area of reactangle having length 12 and width 2 is 24");
+let length = 10
+let width = 10
+
+console.log("area of reactangle having length " + length + "  and width " + 2 + "is " + (length * width));  // template literal
+
+
