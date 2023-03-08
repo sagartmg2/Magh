@@ -1,57 +1,79 @@
-
-let temp = "temporary variable"
-let arr = []
-
 /* 
-variable
- */
-
-// name = "ram"
-// age = 12
-// active_status = true
-// active_status = false
-
-/* data types
     string
     number
     boolean
+    undefined
+    null
 */
-
-var brand = "samsung"
-var color; // color variable // declartion
-color = "red" // initialziation
-color = "white" // re-initialization
-
-
-
-let name = "ram"
-let age = 10
-let status = true;
-
-
 
 /* 
-    ecmascript - js
-    2015 
+    reference datypes // collections 
+    array 
+        - collection of different values
+        - Index  - always starts with 0 
+    object
 */
 
+/* 
+    samsung, apple , lg 
+*/
+let brand1 = "samsung"
+brand1 = "apple" // re-initialization
+let brand2 = "lg"
+
+let brands = [brand1, "aplple", brand2]
+
+console.log(brands);
 
 
-var unit;
-var unit;
 
-let dimension;
-// let dimension;
-dimension = "3d"
-dimension = "2d"
-
-const PI = 3.14
-// PI = 3.1323123
+let names = ["john", "ram", "hari"]
+console.log(names);
+names[1] = "SITA"
+console.log("in 1st index we have", names[1]);
+console.log("in 3rd index we have", names[3]);
 
 
-console.log("Hello ")
-let course = "mern class"
-console.log(course);
+/* object
+    syntax
+    let <object_name>  = {
+        <key | property  | attribute> : <value>
+    }
+
+*/
+
+let projector = {
+    color: "black",
+    resolution: "1990",
+    length: "40cm",
+    price: 50000,
+    port_count: 5,
+    has_hdmi: true,
+}
+
+console.log(projector);
+projector.color = "white"
+console.log("the color is ", projector.color);
+console.log("the nubmer of ports is \n", projector.port_count + ".");
+let num1 = num2 + num3
+
+
+let colors = ["red", "blue", true, null, undefined, [], { color: "red" }]
+console.log({ colors });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
