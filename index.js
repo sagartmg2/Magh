@@ -1,85 +1,63 @@
-/* 
-    string
-    number
-    boolean
-    undefined
-    null
-*/
-
-/* 
-    reference datypes // collections 
-    array 
-        - collection of different values
-        - Index  - always starts with 0 
-    object
-*/
-
-/* 
-    samsung, apple , lg 
-*/
-let brand1 = "samsung"
-brand1 = "apple" // re-initialization
-let brand2 = "lg"
-
-let brands = [brand1, "aplple", brand2]
-
-console.log(brands);
 
 
+// "Task-1 is  false"
+// "Task-2 is  false"
+// .
+// .
+// "Task-5 is true"
 
-let names = ["john", "ram", "hari"]
-console.log(names);
-names[1] = "SITA"
-console.log("in 1st index we have", names[1]);
-console.log("in 3rd index we have", names[3]);
 
-
-/* object
-    syntax
-    let <object_name>  = {
-        <key | property  | attribute> : <value>
-    }
-
-*/
-
-let projector = {
-    color: "black",
-    resolution: "1990",
-    length: "40cm",
-    price: 50000,
-    port_count: 5,
-    has_hdmi: true,
+let task1 = {
+    "userId": 1,
+    "id": 100,
+    "title": "delectus aut autem",
+    "completed": false
 }
 
-console.log(projector);
-projector.color = "white"
-console.log("the color is ", projector.color);
-console.log("the nubmer of ports is \n", projector.port_count + ".");
-let num1 = num2 + num3
+let task2 = {
+    "userId": 1,
+    "id": 2,
+    "title": "quis ut nam facilis et officia qui",
+    "completed": false
+}
+
+let task3 = {
+    "userId": 1,
+    "id": 3,
+    "title": "fugiat veniam minus",
+    "completed": false
+}
+
+let task4 = {
+    "userId": 1,
+    "id": 4,
+    "title": "et porro tempora",
+    "completed": true
+}
+
+let task5 = {
+    "userId": 1,
+    "id": 5,
+    "title": "laboriosam mollitia et enim quasi adipisci quia provident illum",
+    "completed": true
+}
 
 
-let colors = ["red", "blue", true, null, undefined, [], { color: "red" }]
-console.log({ colors });
+console.log(`Task-${task1.id} is ${task1.completed}`)
+console.log('Task2 is $(task2.complete)')
+console.log('Task3 is $(task3.complete)')
+console.log('Task4 is $(task4.complete)')
+console.log('Task5 is $(task5.complete)')
 
 
+/* 
+    WAP to calcuate sum of 1 and 2 
+    WAP to calcuate sum of 1 and 3 
+    WAP to calcuate sum of 2 and 3 
+    WAP to calcuate sum of 2 and 2 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    the sum of 1 and 2 is 3
+    the sum of 1 and 3 is 4
+*/
 
 
