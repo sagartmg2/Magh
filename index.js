@@ -1,137 +1,44 @@
-/* condition */
+/* output
 
+    task-1 is  incomplete
+    task-2 is  compolete
+    .
+    .
+    .
 
-let will_rain = false
-let has_probability = true
-
-
-/*   condition syntax
-    if(<condition>){
-        // do truthy task 
-    }else{
-        // do another another
-    }
 
 */
 
-
-
-// if (will_rain) {
-//     console.log("take umbrella");
-// } else {
-//     console.log("no need");
-// }
-
-/* nested if else |  nested condtions */
-
-if (will_rain) {
-    console.log("take umbrella");
-} else {
-    if (has_probability) {
-        console.log("you make take it");
-    } else {
-        console.log("no need");
-    }
-}
-
-if (will_rain) {
-    console.log("take umbrella");
-} else if (has_probability) {
-    console.log("your wish");
-} else {
-    console.log("no need");
-}
-
-
-/* OPERATORS */
-
-let num1 = 1000  // assignment operator
-
-let first_name = "John"
-let last_name = "Doe"
-let full_name = first_name + " " + last_name  // in string + is referred as contact operator
-console.log(full_name);
-
-
-/* 
-
-Arithematic Operator
-    + 
-    - 
-    * // star sign // multiply
-    /  divide 
-    %  modulous -> returns the remainders
- */
-
-
-let num2 = 2000
-let num3 = num1 + num2  // + in number  ias additional opertoar
-console.log({ num3 });
-
-
-/* logical operator */
-/* 
-    AND opeartor   &&
-    OR opeartor   ||  pipe sign
-    NOT opeartor  !  
-*/
-
-
-/* 
-    AND
-        - compares between two condition  and returns true, if both condition are ture
-    OR
-        - compares between two condition  and returns true, if any one of the  condition is ture
-*/
-
-let enrolled = true
-let payment = false
-let old_student = true
-
-
-if (old_student || (enrolled && payment)) {
-    console.log("can join");
-} else {
-    console.log("can't join");
-}
-
-
-/* comparision operators */
-/*
-    >
-    <
-    >=
-    <=
-    ==   equality
-    ===  strict equality  // this checks data type too
-*/
-
-
-// 1 == "1" // type casting
-
-
-
-/* write a program (WAP) to calcualte if a number is even or odd    */  /*concept needed: funciton,  if else,  modulous   */
-
-
-/* wr */
-
-/* 
-
-    find if a given value is a number if number positive or negative 
-     1
-     idenfityNumber(-10)
-     idenfityNumber("john")
-     "John"  //should print => the given data is not a number
-
-     
-    - make use of if else 
-    - typeof
-    
-    
-
-*/
-
-
-
+let todos = [
+    {
+        "userId": 1,
+        "id": 1,
+        "title": "delectus aut autem",
+        "completed": false
+    },
+    {
+        "userId": 1,
+        "id": 2,
+        "title": "quis ut nam facilis et officia qui",
+        "completed": true
+    },
+    {
+        "userId": 1,
+        "id": 3,
+        "title": "fugiat veniam minus",
+        "completed": false
+    },
+    {
+        "userId": 1,
+        "id": 4,
+        "title": "et porro tempora",
+        "completed": true
+    },
+    {
+        "userId": 1,
+        "id": 5,
+        "title": "laboriosam mollitia et enim quasi adipisci quia provident illum",
+        "completed": false
+    },
+]
 

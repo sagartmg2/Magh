@@ -44,7 +44,7 @@ let task5 = {
 console.log("______________");
 
 
-// console.log(`Task-${task1.id} is ${task1.completed}`)
+console.log(`Task-${task1.id} is ${task1.completed}`)
 // console.log(`Task-${task2.id} is ${task2.completed}`)
 // console.log(`Task-${task3.id} is ${task3.completed}`)
 // console.log(`Task-${task4.id} is ${task4.completed}`)
