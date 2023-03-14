@@ -13,4 +13,5 @@ let month = 1
       print invalid iput
 */
 
-// printMonth()
+printMonth(1)
+printMonth(2)
