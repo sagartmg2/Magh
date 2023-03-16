@@ -55,10 +55,54 @@ let result = sum(num1, num2)  // 3
 // 3  + 10 
 // let result2 = sum(result, 10)
 
-let result2 = sum(  sum(num1, num2)    , 10)
+let result2 = sum(sum(num1, num2), 10)
 // let result2 = sum(    3   ,   10   )
 
-console.log({ result2 });
+// console.log({ result2 });
+
+// function multiplcation(num, num1) {
+//     for (let i = 0; i <= 10; i++) {
+//         let result = num * i;
+//         console.log(`The multiply of ${num} * ${i} is ${result}\n`)
+
+//     }
+
+//     for (let b = 11; b <= 20; b++) {
+//         let output = num1 * b;
+//         console.log(`The multiply of ${num1} * ${b} is ${output}`)
+//     }
+
+// }
+
+// multiplcation(5, 5);
+
+
+// function calculateMultiplication(number, from, to) {
+
+//     for (let i = from; i <= to; i++) {
+//         console.log(`The multiply of ${number} * ${i} is ${number * i}`);
+//     }
+
+// }
+
+const calculateMultiplication = (number, from, to) => {
+    for (let i = from; i <= to; i++) {
+        console.log(`The multiply of ${number} * ${i} is ${number * i}`);
+    }
+}
+
+// calculateMultiplication(2, 5, 15)
+calculateMultiplication(10, 5, 8)
+
+
+// function sum() {
+
+// }
+
+// const sum = () => { }
+
+
+
 
 
 
