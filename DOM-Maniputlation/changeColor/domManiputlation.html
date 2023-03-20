@@ -16,15 +16,30 @@
         change backgournd color
     </button>
 
-    <!-- <button id="btn">
-        change backgournd color
-    </button> -->
+    <button id="btn">
+        change backgournd color method 2
+    </button>
 
     <!-- <script>
         console.log("js code")
     </script> -->
 
-    <script src="./index.js"></script>
+    <script>
+        function changeBackgroundColor() {
+            let colors = ["red", "orange", "blue", "white", "pink"]
+
+            let random_index = Math.floor(Math.random() * colors.length)
+            let color = colors[random_index]
+
+            document.getElementById("body").style.backgroundColor = color
+        }
+
+        // document.getElementById("btn").addEventListener("click",<callbackFunction>)
+        document.getElementById("btn").addEventListener("click", changeBackgroundColor)
+
+
+
+    </script>
 
 </body>
 
