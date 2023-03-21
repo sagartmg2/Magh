@@ -7,17 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        * {}
 
+        body.dark { /* and selector */
+            background-color: black;
+            color: white;
+        }
+
+        .dark #darkButton { /* descendent selecotr */
+            display: none;
+        }
+
+        /* body:not(.dark) #lightButton{
+            display: none;
+        } */
+
+        #lightButton {
+            display: none;
+        }
+
+        .dark #lightButton {
+            display: initial;
+        }
     </style>
+
+    <script src="./index.js" defer></script>
+
 </head>
 
-<body>
+<body class="" id>
 
     <!-- document.getElementById("second").classList.add("dark") -->
     <!-- document.getElementById("second").classList.remove("dark") -->
 
-    <button>dark Theme</button>
-    <button>Light Theme</button>
+    <!-- <button id="darkButton">dark Theme</button>
+    <button id="lightButton">Light Theme</button> -->
+
+    <button id="toggleThemeButton">dark</button>
     <p class="">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt voluptatem possimus enim dolorem officiis!
         Pariatur incidunt est nulla ex eveniet nihil dolor corrupti error eligendi reiciendis! Nobis quas magni nisi!
@@ -26,6 +52,8 @@
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt voluptatem possimus enim dolorem officiis!
         Pariatur incidunt est nulla ex eveniet nihil dolor corrupti error eligendi reiciendis! Nobis quas magni nisi!
     </p>
+    <!-- <script src="./index.js"></script> -->
+
 </body>
 
 </html>

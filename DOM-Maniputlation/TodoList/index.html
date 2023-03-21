@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Todo List</h1>
+    <hr>
+    <form onsubmit="addNewTodo(event)">
+        <input id="task-name" name="task_name" placeholder="Name" />
+        <button onclick="">Add</button>
+    </form>
+
+    <hr>
+    <ul id="todo-lists">
+
+        <li>css <button>delete</button></li>
+    </ul>
+
+    <script>
+        // const addNewTodo = (event) => {
+        //     event.preventDefault();
+        //     console.log("add new todo");
+
+        //     let new_list = document.createElement("li") //<Li></li>
+        //     let tas_name = document.getElementById("task-name").value
+        //     new_list.innerText = tas_name
+
+        //     document.getElementById("todo-lists").appendChild(new_list)
+        //     document.getElementById("task-name").value = ""
+
+
+        //     return;
+
+        // }
+
+        const addNewTodo = (event) => {
+            event.preventDefault();
+
+            console.log("add new todo");
+
+            let new_list = document.createElement("li") //<Li></li>
+
+            // let tas_name = document.getElementById("task-name").value
+
+            new_list.innerText = event.target.task_name.value
+
+            document.getElementById("todo-lists").appendChild(new_list)
+
+            event.target.task_name.value = ""
+
+
+
+            return;
+
+        }
+    </script>
+</body>
+
+</html>
