@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Todo List</h1>
+    <hr>
+    <form onsubmit="addNewTodo(event)">
+        <input id="task-name" name="task_name" placeholder="Name" />
+        <button onclick="">Add</button>
+    </form>
+
+    <hr>
+    <ul id="todo-lists">
+
+    </ul>
+
+    <script>
+
+
+
+        let todos = []
+
+
+        let persisted_todos = localStorage.getItem("todos")
+
+        if (persisted_todos) {
+            todos = JSON.parse(persisted_todos)
+
+            convertTodosToList(todos)
+        }
+
+        const addNewTodo = (event) => {
+            event.preventDefault();
+
+            console.log("add new todo");
+            let todo_title = event.target.task_name.value; // ""
+
+            if (todo_title) {
+
+                todos.push(todo_title)
+                console.log(todos);
+
+                convertTodosToList(todos)
+            }
+
+        }
+
+        function convertTodosToList(arr) {
+            let str = ``
+
+            todos.forEach(todo => {
+                str += `<li>${todo} <button onclick="deleteTodo()">delete</button> </li>`
+            })
+
+            document.getElementById("todo-lists").innerHTML = str
+
+            localStorage.setItem("todos", JSON.stringify(todos))
+        }
+
+        function deleteTodo() {
+            console.log("delete");
+            todos = ["css"]  // TODO: craete a new array without the element which has been deleted
+            convertTodosToList(todos)
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
