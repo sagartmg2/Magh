@@ -53,10 +53,13 @@
         }
 
         function convertTodosToList(arr) {
+
+            console.log(arr)
+
             let str = ``
 
-            todos.forEach(todo => {
-                str += `<li>${todo} <button onclick="deleteTodo()">delete</button> </li>`
+            arr.forEach((todo, index) => {
+                str += `<li>${todo} <button onclick="deleteTodo('${index}')">delete</button> </li>`
             })
 
             document.getElementById("todo-lists").innerHTML = str
@@ -64,9 +67,18 @@
             localStorage.setItem("todos", JSON.stringify(todos))
         }
 
-        function deleteTodo() {
+        function deleteTodo(idx) {
             console.log("delete");
-            todos = ["css"]  // TODO: craete a new array without the element which has been deleted
+
+            /* original_todos = ["react","js","html"] */
+            /* [react,html] */
+
+            todos = todos.filter((element, index) => {
+                if (index != idx) {
+                    return true
+                }
+            })
+
             convertTodosToList(todos)
         }
 
